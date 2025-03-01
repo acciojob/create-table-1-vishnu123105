@@ -1,11 +1,14 @@
 function insert_Row() {
-    //Write your code here
-	const table = docoment.getElememtByID("simlpeTable");
-	let newRow = table.insertRow(0);
-	let cell1 = newRow.insertCell(0);
-	let cell2 = newRow.insertCell(1);
-	cell1.textContent = "New Cell1";
-	cell2.textContent = "New Cell2";
-  
-  
+    var table = document.getElementById("sampleTable");
+
+            // Create a new row at the top (insert a row at the 0th index)
+            var newRow = table.insertRow(1); // Use index 1 to add a row just below the header
+
+            // Create two new cells in this row
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+
+            // Set the content of the new cells
+            cell1.innerHTML = "New Cell1";
+            cell2.innerHTML = "New Cell2";
 }
